@@ -1,6 +1,10 @@
 ## Hi I'm Jackie-cqz
 
+## Tech Stack
 
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/)
+[![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org/)
 
 <!--
 **jackie-cqz/jackie-cqz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
