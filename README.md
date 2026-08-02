@@ -6,6 +6,9 @@
 
 ## About
 
+I'm a student at BUAA, 
+working on AI systems, autonomous agents, and privacy-preserving machine learning.
+
 I build AI systems at the intersection of:
 
 🧠 Large Language Models  
@@ -24,14 +27,9 @@ Some things I've worked on:
 
 ## Current Interests
 
-- Agent Memory Systems
-  - Long-term memory, context management, and knowledge evolution for AI agents
-
-- Agent Cluster & Multi-Agent Systems
-  - Agent collaboration, coordination, and scalable agent architectures
-
-- Hermes Evolution
-  - Exploring self-improving agent systems and evolutionary approaches for autonomous agents
+- Memory architectures for LLM agents, enabling persistent learning and contextual reasoning
+- Multi-agent systems, including agent collaboration, orchestration, and scalable agent networks
+- Evolutionary agent frameworks, exploring self-improvement and autonomous adaptation
 
 
 ## Tech Stack
