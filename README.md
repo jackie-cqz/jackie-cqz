@@ -27,7 +27,7 @@ Some things I've worked on:
 - Agent Memory Systems
   - Long-term memory, context management, and knowledge evolution for AI agents
 
-- Agent Swarms & Multi-Agent Systems
+- Agent Cluster & Multi-Agent Systems
   - Agent collaboration, coordination, and scalable agent architectures
 
 - Hermes Evolution
