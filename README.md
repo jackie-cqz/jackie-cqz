@@ -1,8 +1,35 @@
-## Hi I'm Jackie-cqz
+<div align="center">
 
-Focus on Agent.
+# Hi, I'm Jackie-cqz
 
-Once focused on embedded engineering and hardware.
+## About
+
+I build AI systems at the intersection of:
+
+🧠 Large Language Models  
+🤖 Autonomous Agents  
+👁️ Vision-Language Models  
+🦾 Robotics  
+🔐 Privacy-Preserving Computing  
+
+
+Some things I've worked on:
+
+- LLM Agents with planning, tool calling and multi-agent collaboration
+- VLM-powered robotic manipulation pipelines
+- Reinforcement learning for robot control
+- Fully homomorphic encryption for private AI inference
+
+## Current Interests
+
+- Agent Memory Systems
+  - Long-term memory, context management, and knowledge evolution for AI agents
+
+- Agent Swarms & Multi-Agent Systems
+  - Agent collaboration, coordination, and scalable agent architectures
+
+- Hermes Evolution
+  - Exploring self-improving agent systems and evolutionary approaches for autonomous agents
 
 
 ## Tech Stack
