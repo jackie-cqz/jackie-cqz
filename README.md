@@ -1,5 +1,10 @@
 ## Hi I'm Jackie-cqz
 
+Focus on Agent.
+
+Once focused on embedded engineering and hardware.
+
+
 ## Tech Stack
 
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org/)
