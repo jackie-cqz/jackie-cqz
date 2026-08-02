@@ -11,11 +11,11 @@ working on AI systems, autonomous agents, and privacy-preserving machine learnin
 
 I build AI systems at the intersection of:
 
-🧠 Large Language Models  
-🤖 Autonomous Agents  
-👁️ Vision-Language Models  
-🦾 Robotics  
-🔐 Privacy-Preserving Computing  
+- Large Language Models  
+- Autonomous Agents  
+- Vision-Language Models  
+- Robotics  
+- Privacy-Preserving Computing  
 
 
 Some things I've worked on:
