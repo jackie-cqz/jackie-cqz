@@ -2,6 +2,12 @@ name: Update PR statistics
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "pr-stats.config.json"
+      - "scripts/generate-pr-stats.mjs"
   schedule:
     - cron: "37 2 * * *"
 

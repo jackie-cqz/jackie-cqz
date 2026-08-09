@@ -7,5 +7,5 @@
   "states": ["merged", "open", "closed"],
   "includeRepositories": [],
   "excludeRepositories": [],
-  "selectedPullRequests": []
+  "selectedPullRequests": ["https://github.com/esengine/DeepSeek-Reasonix/pull/7210"]
 }
