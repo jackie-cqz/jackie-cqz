@@ -1,0 +1,11 @@
+{
+  "username": "jackie-cqz",
+  "title": "Open Source Contributions",
+  "subtitle": "Pull requests across the GitHub ecosystem",
+  "months": 12,
+  "maxItems": 8,
+  "states": ["merged", "open", "closed"],
+  "includeRepositories": [],
+  "excludeRepositories": [],
+  "selectedPullRequests": []
+}
