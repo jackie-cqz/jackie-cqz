@@ -1,10 +1,12 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = resolve(scriptDirectory, "..");
 const configPath = resolve(repositoryRoot, "pr-stats.config.json");
+const readmePath = resolve(repositoryRoot, "README.md");
 const outputDirectory = resolve(repositoryRoot, "assets");
 const config = JSON.parse(await readFile(configPath, "utf8"));
 
@@ -264,11 +266,24 @@ function renderSvg(pullRequests, theme) {
 
 const allPullRequests = await fetchPullRequests(config.username);
 const pullRequests = filterPullRequests(allPullRequests);
+const lightSvg = renderSvg(pullRequests, "light");
+const darkSvg = renderSvg(pullRequests, "dark");
+const cacheKey = createHash("sha256")
+  .update(lightSvg)
+  .update(darkSvg)
+  .digest("hex")
+  .slice(0, 12);
+const readme = await readFile(readmePath, "utf8");
+const updatedReadme = readme.replace(
+  /(\.\/assets\/pr-stats-(?:light|dark)\.svg)(?:\?v=[^"'\s<>]+)?/g,
+  `$1?v=${cacheKey}`,
+);
 
 await mkdir(outputDirectory, { recursive: true });
 await Promise.all([
-  writeFile(resolve(outputDirectory, "pr-stats-light.svg"), renderSvg(pullRequests, "light")),
-  writeFile(resolve(outputDirectory, "pr-stats-dark.svg"), renderSvg(pullRequests, "dark")),
+  writeFile(resolve(outputDirectory, "pr-stats-light.svg"), lightSvg),
+  writeFile(resolve(outputDirectory, "pr-stats-dark.svg"), darkSvg),
+  writeFile(readmePath, updatedReadme),
 ]);
 
 console.log(`Generated PR statistics for ${pullRequests.length} pull requests.`);

@@ -58,9 +58,9 @@ Here are some ideas to get you started:
 ## Open Source Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg">
-  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=082de0f1ea83">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=082de0f1ea83">
+  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=082de0f1ea83" width="100%">
 </picture>
 
 <sub>Automatically updated from GitHub public pull-request data. Displayed PRs can be selected in <code>pr-stats.config.json</code>.</sub>
