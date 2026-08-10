@@ -137,12 +137,6 @@ function cube(x, baseline, level, colors) {
     <polygon points="${x + size},${y + 5} ${x + size * 2},${y} ${x + size * 2},${y + height} ${x + size},${y + height + 5}" fill="${colors.cubeRight}"/>`;
 }
 
-function escapeMarkdown(value) {
-  return String(value)
-    .replace(/([\\[\]*_])/g, "\\$1")
-    .replace(/\r?\n/g, " ");
-}
-
 function renderMarkdownPullRequests(pullRequests) {
   const recent = [...pullRequests]
     .sort((left, right) => new Date(right.createdAt) - new Date(left.createdAt))
@@ -152,19 +146,39 @@ function renderMarkdownPullRequests(pullRequests) {
     open: { icon: "🟢", label: "Open" },
     closed: { icon: "⚪", label: "Closed" },
   };
-  const rows = recent.length > 0
-    ? recent.map((pullRequest) => {
-        const date = new Date(pullRequest.createdAt).toISOString().slice(0, 10);
-        const reference = `${pullRequest.repository}#${pullRequest.number}`;
-        const state = status[pullRequest.state];
-        return `- ${state.icon} [**${escapeMarkdown(reference)}** — ${escapeMarkdown(truncate(pullRequest.title, 80))}](${pullRequest.url}) · \`${state.label}\` · ${date}`;
-      })
-    : ["_No pull requests match the current selection._"];
+  const cards = recent.map((pullRequest) => {
+    const date = new Date(pullRequest.createdAt).toLocaleDateString("en-US", {
+      day: "numeric",
+      month: "short",
+      timeZone: "UTC",
+      year: "numeric",
+    });
+    const reference = `${pullRequest.repository}#${pullRequest.number}`;
+    const state = status[pullRequest.state];
+    return `  <tr>
+    <td align="center" width="48">${state.icon}</td>
+    <td>
+      <a href="${escapeXml(pullRequest.url)}"><strong>${escapeXml(truncate(pullRequest.title, 86))} ↗</strong></a><br>
+      <sub><code>${escapeXml(reference)}</code> · ${date}</sub>
+    </td>
+    <td align="right" width="120">
+      <strong>${state.label.toUpperCase()}</strong><br>
+      <sub><a href="${escapeXml(pullRequest.url)}">View PR →</a></sub>
+    </td>
+  </tr>`;
+  });
+  const content = cards.length > 0
+    ? `<table width="100%">
+${cards.join("\n")}
+</table>`
+    : "_No pull requests match the current selection._";
 
   return `<!-- pr-list:start -->
-### Selected Pull Requests
+### Featured Pull Requests
 
-${rows.join("\n")}
+<sub>CURATED OPEN-SOURCE CONTRIBUTIONS · SELECT A CARD TO EXPLORE</sub>
+
+${content}
 <!-- pr-list:end -->`;
 }
 

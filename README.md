@@ -64,9 +64,23 @@ Here are some ideas to get you started:
 </picture>
 
 <!-- pr-list:start -->
-### Selected Pull Requests
+### Featured Pull Requests
 
-- 🟣 [**esengine/DeepSeek-Reasonix#7210** — fix: add configurable terminal theme](https://github.com/esengine/DeepSeek-Reasonix/pull/7210) · `Merged` · 2026-08-02
+<sub>CURATED OPEN-SOURCE CONTRIBUTIONS · SELECT A CARD TO EXPLORE</sub>
+
+<table width="100%">
+  <tr>
+    <td align="center" width="48">🟣</td>
+    <td>
+      <a href="https://github.com/esengine/DeepSeek-Reasonix/pull/7210"><strong>fix: add configurable terminal theme ↗</strong></a><br>
+      <sub><code>esengine/DeepSeek-Reasonix#7210</code> · Aug 2, 2026</sub>
+    </td>
+    <td align="right" width="120">
+      <strong>MERGED</strong><br>
+      <sub><a href="https://github.com/esengine/DeepSeek-Reasonix/pull/7210">View PR →</a></sub>
+    </td>
+  </tr>
+</table>
 <!-- pr-list:end -->
 
 <sub>Automatically updated from GitHub public pull-request data. Displayed PRs can be selected in <code>pr-stats.config.json</code>.</sub>
