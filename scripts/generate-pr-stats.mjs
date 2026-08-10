@@ -137,6 +137,37 @@ function cube(x, baseline, level, colors) {
     <polygon points="${x + size},${y + 5} ${x + size * 2},${y} ${x + size * 2},${y + height} ${x + size},${y + height + 5}" fill="${colors.cubeRight}"/>`;
 }
 
+function escapeMarkdown(value) {
+  return String(value)
+    .replace(/([\\[\]*_])/g, "\\$1")
+    .replace(/\r?\n/g, " ");
+}
+
+function renderMarkdownPullRequests(pullRequests) {
+  const recent = [...pullRequests]
+    .sort((left, right) => new Date(right.createdAt) - new Date(left.createdAt))
+    .slice(0, config.maxItems);
+  const status = {
+    merged: { icon: "🟣", label: "Merged" },
+    open: { icon: "🟢", label: "Open" },
+    closed: { icon: "⚪", label: "Closed" },
+  };
+  const rows = recent.length > 0
+    ? recent.map((pullRequest) => {
+        const date = new Date(pullRequest.createdAt).toISOString().slice(0, 10);
+        const reference = `${pullRequest.repository}#${pullRequest.number}`;
+        const state = status[pullRequest.state];
+        return `- ${state.icon} [**${escapeMarkdown(reference)}** — ${escapeMarkdown(truncate(pullRequest.title, 80))}](${pullRequest.url}) · \`${state.label}\` · ${date}`;
+      })
+    : ["_No pull requests match the current selection._"];
+
+  return `<!-- pr-list:start -->
+### Selected Pull Requests
+
+${rows.join("\n")}
+<!-- pr-list:end -->`;
+}
+
 function renderSvg(pullRequests, theme) {
   const colors = theme === "dark"
     ? {
@@ -159,14 +190,7 @@ function renderSvg(pullRequests, theme) {
   const repositories = repositoryCounts(pullRequests);
   const mergeRate = total === 0 ? 0 : Math.round((merged / total) * 100);
   const months = monthBuckets(pullRequests, config.months);
-  const recent = [...pullRequests]
-    .sort((left, right) => new Date(right.createdAt) - new Date(left.createdAt))
-    .slice(0, config.maxItems);
-
-  const rowHeight = 38;
-  const listHeight = 72 + Math.max(recent.length, 1) * rowHeight;
-  const height = 602 + listHeight;
-  const statusColors = { merged: colors.accent, open: colors.open, closed: colors.closed };
+  const height = 548;
   const monthWidth = 746 / Math.max(months.length, 1);
   const maxCount = Math.max(1, ...months.map((month) => month.count));
 
@@ -194,23 +218,6 @@ function renderSvg(pullRequests, theme) {
     </g>`;
   }).join("");
 
-  const rows = recent.length > 0
-    ? recent.map((pullRequest, index) => {
-        const y = 594 + index * rowHeight;
-        const stateLabel = pullRequest.state === "merged" ? "MERGED" : pullRequest.state.toUpperCase();
-        const date = new Date(pullRequest.createdAt).toISOString().slice(0, 10);
-        return `<g transform="translate(42,${y})">
-          ${index > 0 ? `<line x1="0" y1="0" x2="816" y2="0" stroke="${colors.border}"/>` : ""}
-          <circle cx="8" cy="19" r="4" fill="${statusColors[pullRequest.state]}"/>
-          <text x="21" y="16" class="repo">${escapeXml(truncate(pullRequest.repository, 24))}</text>
-          <text x="21" y="29" class="micro">#${pullRequest.number}</text>
-          <text x="248" y="23" class="body">${escapeXml(truncate(pullRequest.title, 48))}</text>
-          <text x="720" y="16" class="state" fill="${statusColors[pullRequest.state]}">${stateLabel}</text>
-          <text x="720" y="29" class="micro">${date}</text>
-        </g>`;
-      }).join("")
-    : `<text x="450" y="620" class="body" text-anchor="middle">No pull requests match the current selection.</text>`;
-
   return `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="${height}" viewBox="0 0 900 ${height}" role="img" aria-labelledby="title description">
   <title id="title">${escapeXml(config.title)} for ${escapeXml(config.username)}</title>
   <desc id="description">A visual summary of ${total} GitHub pull requests across ${repositories.length} repositories.</desc>
@@ -222,11 +229,9 @@ function renderSvg(pullRequests, theme) {
     .metric { font-size: 25px; font-weight: 750; fill: ${colors.text}; }
     .metric-label { font-size: 10px; fill: ${colors.muted}; }
     .section { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; fill: ${colors.text}; }
-    .body { font-size: 11px; fill: ${colors.text}; }
     .repo { font-size: 10px; font-weight: 650; fill: ${colors.text}; }
     .micro { font-size: 8px; fill: ${colors.muted}; }
     .count { font-size: 9px; font-weight: 700; fill: ${colors.accent}; }
-    .state { font-size: 8px; font-weight: 700; letter-spacing: .7px; }
   </style>
   <rect width="900" height="${height}" rx="18" fill="${colors.background}"/>
 
@@ -253,14 +258,7 @@ function renderSvg(pullRequests, theme) {
     ${cubes}
   </g>
   ${repositoryBadges}
-
-  <text x="42" y="552" class="section">SELECTED PULL REQUESTS</text>
-  <text x="858" y="552" class="subtitle" text-anchor="end">Configure selection in pr-stats.config.json</text>
-  <g>
-    <rect x="24" y="566" width="852" height="${listHeight}" rx="12" fill="${colors.surface}" stroke="${colors.border}"/>
-    ${rows}
-  </g>
-  <text x="858" y="${height - 18}" class="micro" text-anchor="end">Updated ${new Date().toISOString().slice(0, 10)} · GitHub public data</text>
+  <text x="858" y="530" class="micro" text-anchor="end">Updated ${new Date().toISOString().slice(0, 10)} · GitHub public data</text>
 </svg>`.replace(/[ \t]+$/gm, "");
 }
 
@@ -274,10 +272,15 @@ const cacheKey = createHash("sha256")
   .digest("hex")
   .slice(0, 12);
 const readme = await readFile(readmePath, "utf8");
-const updatedReadme = readme.replace(
+let updatedReadme = readme.replace(
   /(\.\/assets\/pr-stats-(?:light|dark)\.svg)(?:\?v=[^"'\s<>]+)?/g,
   `$1?v=${cacheKey}`,
 );
+const markdownPullRequests = renderMarkdownPullRequests(pullRequests);
+const markdownBlockPattern = /<!-- pr-list:start -->[\s\S]*?<!-- pr-list:end -->/;
+updatedReadme = markdownBlockPattern.test(updatedReadme)
+  ? updatedReadme.replace(markdownBlockPattern, markdownPullRequests)
+  : updatedReadme.replace("</picture>", `</picture>\n\n${markdownPullRequests}`);
 
 await mkdir(outputDirectory, { recursive: true });
 await Promise.all([

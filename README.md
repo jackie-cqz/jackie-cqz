@@ -58,9 +58,15 @@ Here are some ideas to get you started:
 ## Open Source Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=e4caa42e12de">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=e4caa42e12de">
-  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=e4caa42e12de" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=4e58232b29f6">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=4e58232b29f6">
+  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=4e58232b29f6" width="100%">
 </picture>
+
+<!-- pr-list:start -->
+### Selected Pull Requests
+
+- 🟣 [**esengine/DeepSeek-Reasonix#7210** — fix: add configurable terminal theme](https://github.com/esengine/DeepSeek-Reasonix/pull/7210) · `Merged` · 2026-08-02
+<!-- pr-list:end -->
 
 <sub>Automatically updated from GitHub public pull-request data. Displayed PRs can be selected in <code>pr-stats.config.json</code>.</sub>
