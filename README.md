@@ -6,7 +6,7 @@
 
 ## About
 
-I'm a student at BUAA, 
+I'm a student at Beihang University, 
 working on AI systems, autonomous agents, and privacy-preserving machine learning.
 
 I build AI systems at the intersection of:
