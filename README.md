@@ -58,9 +58,9 @@ Here are some ideas to get you started:
 ## Open Source Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=74d2a2d28ced">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=74d2a2d28ced">
-  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=74d2a2d28ced" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=581cbbe07d27">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=581cbbe07d27">
+  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=581cbbe07d27" width="100%">
 </picture>
 
 <!-- pr-list:start -->
@@ -69,6 +69,17 @@ Here are some ideas to get you started:
 <sub>CURATED OPEN-SOURCE CONTRIBUTIONS · SELECT A CARD TO EXPLORE</sub>
 
 <table width="100%">
+  <tr>
+    <td align="center" width="48">🟣</td>
+    <td>
+      <a href="https://github.com/esengine/DeepSeek-Reasonix/pull/8097"><strong>fix(desktop): hide base providers from plugin model group / 隐藏插件模型分组中的普通供应商 ↗</strong></a><br>
+      <sub><code>esengine/DeepSeek-Reasonix#8097</code> · Aug 9, 2026</sub>
+    </td>
+    <td align="right" width="120">
+      <strong>MERGED</strong><br>
+      <sub><a href="https://github.com/esengine/DeepSeek-Reasonix/pull/8097">View PR →</a></sub>
+    </td>
+  </tr>
   <tr>
     <td align="center" width="48">🟣</td>
     <td>
