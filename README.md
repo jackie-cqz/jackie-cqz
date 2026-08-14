@@ -58,9 +58,9 @@ Here are some ideas to get you started:
 ## Open Source Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=4f58b5bc4d36">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=4f58b5bc4d36">
-  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=4f58b5bc4d36" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=2027e78e43ba">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=2027e78e43ba">
+  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=2027e78e43ba" width="100%">
 </picture>
 
 <!-- pr-list:start -->
