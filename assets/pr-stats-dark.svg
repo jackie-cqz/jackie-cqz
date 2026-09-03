@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="548" viewBox="0 0 900 548" role="img" aria-labelledby="title description">
+  <title id="title">Open Source Contributions for jackie-cqz</title>
+  <desc id="description">A visual summary of 9 GitHub pull requests across 4 repositories.</desc>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 2.2px; fill: #f0f6fc; }
+    .title { font-size: 27px; font-weight: 750; fill: #a371f7; }
+    .subtitle { font-size: 11px; fill: #8b949e; }
+    .metric { font-size: 25px; font-weight: 750; fill: #f0f6fc; }
+    .metric-label { font-size: 10px; fill: #8b949e; }
+    .section { font-size: 11px; font-weight: 700; letter-spacing: 1.4px; fill: #f0f6fc; }
+    .repo { font-size: 10px; font-weight: 650; fill: #f0f6fc; }
+    .micro { font-size: 8px; fill: #8b949e; }
+    .count { font-size: 9px; font-weight: 700; fill: #f0f6fc; }
+    .legend { font-size: 9px; font-weight: 650; fill: #8b949e; }
+  </style>
+  <rect width="900" height="548" rx="18" fill="#0d1117"/>
+
+  <text x="42" y="48" class="eyebrow">OPEN SOURCE · PULL REQUESTS</text>
+  <text x="42" y="70" class="subtitle">Pull requests across the GitHub ecosystem · @jackie-cqz</text>
+  <text x="858" y="52" class="title" text-anchor="end">9 PRs</text>
+  <text x="858" y="70" class="subtitle" text-anchor="end">3 merged · 6 open · 0 closed</text>
+
+  <g transform="translate(42,96)">
+    <rect width="816" height="112" rx="12" fill="#161b22" stroke="#30363d"/>
+    <line x1="204" y1="20" x2="204" y2="92" stroke="#30363d"/>
+    <line x1="408" y1="20" x2="408" y2="92" stroke="#30363d"/>
+    <line x1="612" y1="20" x2="612" y2="92" stroke="#30363d"/>
+    <text x="28" y="53" class="metric">9</text><text x="28" y="73" class="metric-label">SELECTED PRS</text>
+    <text x="232" y="53" class="metric">3</text><text x="232" y="73" class="metric-label">MERGED</text>
+    <text x="436" y="53" class="metric">4</text><text x="436" y="73" class="metric-label">REPOSITORIES</text>
+    <text x="640" y="53" class="metric">33%</text><text x="640" y="73" class="metric-label">MERGE RATE</text>
+  </g>
+
+  <text x="42" y="250" class="section">ACTIVITY · LAST 12 MONTHS</text>
+  <circle cx="704" cy="246" r="4" fill="#3fb950"/>
+  <text x="714" y="250" class="legend">OPEN 6</text>
+  <circle cx="782" cy="246" r="4" fill="#a371f7"/>
+  <text x="792" y="250" class="legend">MERGED 3</text>
+  <g>
+    <line x1="60" y1="397" x2="840" y2="397" stroke="#30363d"/>
+
+      <text x="113.08333333333333" y="411" class="micro" text-anchor="middle">Oct</text>
+
+      <text x="113.08333333333333" y="436" class="micro" text-anchor="middle">2025</text>
+      <text x="175.25" y="411" class="micro" text-anchor="middle">Nov</text>
+
+
+      <text x="237.41666666666666" y="411" class="micro" text-anchor="middle">Dec</text>
+
+
+      <text x="299.5833333333333" y="411" class="micro" text-anchor="middle">Jan</text>
+
+      <text x="299.5833333333333" y="436" class="micro" text-anchor="middle">2026</text>
+      <text x="361.74999999999994" y="411" class="micro" text-anchor="middle">Feb</text>
+
+
+      <text x="423.91666666666663" y="411" class="micro" text-anchor="middle">Mar</text>
+
+
+      <text x="486.0833333333333" y="411" class="micro" text-anchor="middle">Apr</text>
+
+
+      <text x="548.25" y="411" class="micro" text-anchor="middle">May</text>
+
+
+      <text x="610.4166666666666" y="411" class="micro" text-anchor="middle">Jun</text>
+
+
+      <text x="672.5833333333334" y="411" class="micro" text-anchor="middle">Jul</text>
+
+
+    <polygon points="724.75,382 734.75,377 744.75,382 734.75,387" fill="#c29bff"/>
+    <polygon points="724.75,382 734.75,387 734.75,397 724.75,392" fill="#8250df"/>
+    <polygon points="734.75,387 744.75,382 744.75,392 734.75,397" fill="#6e40c9"/>
+    <polygon points="724.75,372 734.75,367 744.75,372 734.75,377" fill="#c29bff"/>
+    <polygon points="724.75,372 734.75,377 734.75,387 724.75,382" fill="#8250df"/>
+    <polygon points="734.75,377 744.75,372 744.75,382 734.75,387" fill="#6e40c9"/>
+    <polygon points="724.75,362 734.75,357 744.75,362 734.75,367" fill="#7ee787"/>
+    <polygon points="724.75,362 734.75,367 734.75,377 724.75,372" fill="#2ea043"/>
+    <polygon points="734.75,367 744.75,362 744.75,372 734.75,377" fill="#238636"/>
+      <text x="734.75" y="411" class="micro" text-anchor="middle">Aug</text>
+      <text x="734.75" y="343" class="count" text-anchor="middle">3</text>
+
+    <polygon points="786.9166666666666,382 796.9166666666666,377 806.9166666666666,382 796.9166666666666,387" fill="#c29bff"/>
+    <polygon points="786.9166666666666,382 796.9166666666666,387 796.9166666666666,397 786.9166666666666,392" fill="#8250df"/>
+    <polygon points="796.9166666666666,387 806.9166666666666,382 806.9166666666666,392 796.9166666666666,397" fill="#6e40c9"/>
+    <polygon points="786.9166666666666,372 796.9166666666666,367 806.9166666666666,372 796.9166666666666,377" fill="#7ee787"/>
+    <polygon points="786.9166666666666,372 796.9166666666666,377 796.9166666666666,387 786.9166666666666,382" fill="#2ea043"/>
+    <polygon points="796.9166666666666,377 806.9166666666666,372 806.9166666666666,382 796.9166666666666,387" fill="#238636"/>
+    <polygon points="786.9166666666666,362 796.9166666666666,357 806.9166666666666,362 796.9166666666666,367" fill="#7ee787"/>
+    <polygon points="786.9166666666666,362 796.9166666666666,367 796.9166666666666,377 786.9166666666666,372" fill="#2ea043"/>
+    <polygon points="796.9166666666666,367 806.9166666666666,362 806.9166666666666,372 796.9166666666666,377" fill="#238636"/>
+    <polygon points="786.9166666666666,352 796.9166666666666,347 806.9166666666666,352 796.9166666666666,357" fill="#7ee787"/>
+    <polygon points="786.9166666666666,352 796.9166666666666,357 796.9166666666666,367 786.9166666666666,362" fill="#2ea043"/>
+    <polygon points="796.9166666666666,357 806.9166666666666,352 806.9166666666666,362 796.9166666666666,367" fill="#238636"/>
+    <polygon points="786.9166666666666,342 796.9166666666666,337 806.9166666666666,342 796.9166666666666,347" fill="#7ee787"/>
+    <polygon points="786.9166666666666,342 796.9166666666666,347 796.9166666666666,357 786.9166666666666,352" fill="#2ea043"/>
+    <polygon points="796.9166666666666,347 806.9166666666666,342 806.9166666666666,352 796.9166666666666,357" fill="#238636"/>
+    <polygon points="786.9166666666666,332 796.9166666666666,327 806.9166666666666,332 796.9166666666666,337" fill="#7ee787"/>
+    <polygon points="786.9166666666666,332 796.9166666666666,337 796.9166666666666,347 786.9166666666666,342" fill="#2ea043"/>
+    <polygon points="796.9166666666666,337 806.9166666666666,332 806.9166666666666,342 796.9166666666666,347" fill="#238636"/>
+      <text x="796.9166666666666" y="411" class="micro" text-anchor="middle">Sep</text>
+      <text x="796.9166666666666" y="313" class="count" text-anchor="middle">6</text>
+
+  </g>
+  <g transform="translate(42,466)">
+      <rect width="186" height="38" rx="9" fill="#11161d" stroke="#30363d"/>
+      <circle cx="15" cy="19" r="4" fill="#a371f7"/>
+      <text x="26" y="16" class="repo">esengine/DeepSeek-Re…</text>
+      <text x="26" y="29" class="micro">5 pull requests</text>
+    </g><g transform="translate(244,466)">
+      <rect width="186" height="38" rx="9" fill="#11161d" stroke="#30363d"/>
+      <circle cx="15" cy="19" r="4" fill="#a371f7"/>
+      <text x="26" y="16" class="repo">omdsh-dev/DSH-better…</text>
+      <text x="26" y="29" class="micro">2 pull requests</text>
+    </g><g transform="translate(446,466)">
+      <rect width="186" height="38" rx="9" fill="#11161d" stroke="#30363d"/>
+      <circle cx="15" cy="19" r="4" fill="#a371f7"/>
+      <text x="26" y="16" class="repo">affaan-m/ECC</text>
+      <text x="26" y="29" class="micro">1 pull request</text>
+    </g><g transform="translate(648,466)">
+      <rect width="186" height="38" rx="9" fill="#11161d" stroke="#30363d"/>
+      <circle cx="15" cy="19" r="4" fill="#a371f7"/>
+      <text x="26" y="16" class="repo">anywhere-labs/dsh-de…</text>
+      <text x="26" y="29" class="micro">1 pull request</text>
+    </g>
+  <text x="858" y="530" class="micro" text-anchor="end">Updated 2026-09-03 · GitHub public data</text>
+</svg>

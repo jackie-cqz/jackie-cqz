@@ -1,0 +1,21 @@
+{
+  "username": "jackie-cqz",
+  "title": "Open Source Contributions",
+  "subtitle": "Pull requests across the GitHub ecosystem",
+  "months": 12,
+  "maxItems": 9,
+  "states": ["merged", "open"],
+  "includeRepositories": [],
+  "excludeRepositories": [],
+  "selectedPullRequests": [
+    "https://github.com/omdsh-dev/DSH-better-sidebar/pull/543",
+    "https://github.com/affaan-m/ECC/pull/2925",
+    "https://github.com/esengine/DeepSeek-Reasonix/pull/9684",
+    "https://github.com/esengine/DeepSeek-Reasonix/pull/9682",
+    "https://github.com/esengine/DeepSeek-Reasonix/pull/9681",
+    "https://github.com/anywhere-labs/dsh-desktop/pull/758",
+    "https://github.com/omdsh-dev/DSH-better-sidebar/pull/503",
+    "https://github.com/esengine/DeepSeek-Reasonix/pull/8097",
+    "https://github.com/esengine/DeepSeek-Reasonix/pull/7210"
+  ]
+}
