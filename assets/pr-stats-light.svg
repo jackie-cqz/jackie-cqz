@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="548" viewBox="0 0 900 548" role="img" aria-labelledby="title description">
   <title id="title">Open Source Contributions for jackie-cqz</title>
-  <desc id="description">A visual summary of 10 GitHub pull requests across 5 repositories.</desc>
+  <desc id="description">A visual summary of 9 GitHub pull requests across 4 repositories.</desc>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
     .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 2.2px; fill: #1f2328; }
@@ -18,23 +18,23 @@
 
   <text x="42" y="48" class="eyebrow">OPEN SOURCE · PULL REQUESTS</text>
   <text x="42" y="70" class="subtitle">Pull requests across the GitHub ecosystem · @jackie-cqz</text>
-  <text x="858" y="52" class="title" text-anchor="end">10 PRs</text>
-  <text x="858" y="70" class="subtitle" text-anchor="end">4 merged · 6 open · 0 closed</text>
+  <text x="858" y="52" class="title" text-anchor="end">9 PRs</text>
+  <text x="858" y="70" class="subtitle" text-anchor="end">4 merged · 5 open · 0 closed</text>
 
   <g transform="translate(42,96)">
     <rect width="816" height="112" rx="12" fill="#ffffff" stroke="#d0d7de"/>
     <line x1="204" y1="20" x2="204" y2="92" stroke="#d0d7de"/>
     <line x1="408" y1="20" x2="408" y2="92" stroke="#d0d7de"/>
     <line x1="612" y1="20" x2="612" y2="92" stroke="#d0d7de"/>
-    <text x="28" y="53" class="metric">10</text><text x="28" y="73" class="metric-label">SELECTED PRS</text>
+    <text x="28" y="53" class="metric">9</text><text x="28" y="73" class="metric-label">SELECTED PRS</text>
     <text x="232" y="53" class="metric">4</text><text x="232" y="73" class="metric-label">MERGED</text>
-    <text x="436" y="53" class="metric">5</text><text x="436" y="73" class="metric-label">REPOSITORIES</text>
-    <text x="640" y="53" class="metric">40%</text><text x="640" y="73" class="metric-label">MERGE RATE</text>
+    <text x="436" y="53" class="metric">4</text><text x="436" y="73" class="metric-label">REPOSITORIES</text>
+    <text x="640" y="53" class="metric">44%</text><text x="640" y="73" class="metric-label">MERGE RATE</text>
   </g>
 
   <text x="42" y="250" class="section">ACTIVITY · LAST 12 MONTHS</text>
   <circle cx="704" cy="246" r="4" fill="#1a7f37"/>
-  <text x="714" y="250" class="legend">OPEN 6</text>
+  <text x="714" y="250" class="legend">OPEN 5</text>
   <circle cx="782" cy="246" r="4" fill="#8250df"/>
   <text x="792" y="250" class="legend">MERGED 4</text>
   <g>
@@ -100,11 +100,8 @@
     <polygon points="786.9166666666666,332 796.9166666666666,327 806.9166666666666,332 796.9166666666666,337" fill="#56d364"/>
     <polygon points="786.9166666666666,332 796.9166666666666,337 796.9166666666666,347 786.9166666666666,342" fill="#2da44e"/>
     <polygon points="796.9166666666666,337 806.9166666666666,332 806.9166666666666,342 796.9166666666666,347" fill="#1a7f37"/>
-    <polygon points="786.9166666666666,322 796.9166666666666,317 806.9166666666666,322 796.9166666666666,327" fill="#56d364"/>
-    <polygon points="786.9166666666666,322 796.9166666666666,327 796.9166666666666,337 786.9166666666666,332" fill="#2da44e"/>
-    <polygon points="796.9166666666666,327 806.9166666666666,322 806.9166666666666,332 796.9166666666666,337" fill="#1a7f37"/>
       <text x="796.9166666666666" y="411" class="micro" text-anchor="middle">Sep</text>
-      <text x="796.9166666666666" y="303" class="count" text-anchor="middle">7</text>
+      <text x="796.9166666666666" y="313" class="count" text-anchor="middle">6</text>
 
   </g>
   <g transform="translate(42,466)">
@@ -120,13 +117,13 @@
     </g><g transform="translate(446,466)">
       <rect width="186" height="38" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
       <circle cx="15" cy="19" r="4" fill="#8250df"/>
-      <text x="26" y="16" class="repo">affaan-m/ECC</text>
+      <text x="26" y="16" class="repo">anywhere-labs/dsh-de…</text>
       <text x="26" y="29" class="micro">1 pull request</text>
     </g><g transform="translate(648,466)">
       <rect width="186" height="38" rx="9" fill="#f6f8fa" stroke="#d0d7de"/>
       <circle cx="15" cy="19" r="4" fill="#8250df"/>
-      <text x="26" y="16" class="repo">anywhere-labs/dsh-de…</text>
+      <text x="26" y="16" class="repo">tt-a1i/archify</text>
       <text x="26" y="29" class="micro">1 pull request</text>
     </g>
-  <text x="858" y="530" class="micro" text-anchor="end">Updated 2026-09-09 · GitHub public data</text>
+  <text x="858" y="530" class="micro" text-anchor="end">Updated 2026-09-10 · GitHub public data</text>
 </svg>

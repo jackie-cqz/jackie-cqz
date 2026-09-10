@@ -68,9 +68,9 @@ Here are some ideas to get you started:
 ## Open Source Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=d15c43186dbf">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=d15c43186dbf">
-  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=d15c43186dbf" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=622afddb59ad">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=622afddb59ad">
+  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=622afddb59ad" width="100%">
 </picture>
 
 <!-- pr-list:start -->
@@ -110,17 +110,6 @@ Here are some ideas to get you started:
     <td align="right" width="120">
       <strong>MERGED</strong><br>
       <sub><a href="https://github.com/omdsh-dev/DSH-better-sidebar/pull/503">View PR →</a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="48">🟢</td>
-    <td>
-      <a href="https://github.com/affaan-m/ECC/pull/2925"><strong>fix(hooks): preserve large passthrough payloads ↗</strong></a><br>
-      <sub><code>affaan-m/ECC#2925</code> · Sep 1, 2026</sub>
-    </td>
-    <td align="right" width="120">
-      <strong>OPEN</strong><br>
-      <sub><a href="https://github.com/affaan-m/ECC/pull/2925">View PR →</a></sub>
     </td>
   </tr>
   <tr>
