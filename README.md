@@ -68,9 +68,9 @@ Here are some ideas to get you started:
 ## Open Source Contributions
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=5c037daee1ad">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=5c037daee1ad">
-  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=5c037daee1ad" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/pr-stats-dark.svg?v=b90b408a329f">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/pr-stats-light.svg?v=b90b408a329f">
+  <img alt="GitHub pull request statistics" src="./assets/pr-stats-light.svg?v=b90b408a329f" width="100%">
 </picture>
 
 <!-- pr-list:start -->
@@ -132,17 +132,6 @@ Here are some ideas to get you started:
     <td align="right" width="120">
       <strong>OPEN</strong><br>
       <sub><a href="https://github.com/esengine/DeepSeek-Reasonix/pull/9682">View PR →</a></sub>
-    </td>
-  </tr>
-  <tr>
-    <td align="center" width="48">🟢</td>
-    <td>
-      <a href="https://github.com/esengine/DeepSeek-Reasonix/pull/9681"><strong>fix(studio): keep model search in settings scroll flow ↗</strong></a><br>
-      <sub><code>esengine/DeepSeek-Reasonix#9681</code> · Sep 1, 2026</sub>
-    </td>
-    <td align="right" width="120">
-      <strong>OPEN</strong><br>
-      <sub><a href="https://github.com/esengine/DeepSeek-Reasonix/pull/9681">View PR →</a></sub>
     </td>
   </tr>
   <tr>
