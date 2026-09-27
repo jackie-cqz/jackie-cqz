@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="256" viewBox="0 0 980 256" role="img" aria-labelledby="title description">
+  <title id="title">Hello, I'm jackie-cqz.</title>
+  <desc id="description">AI systems, autonomous agents, and privacy-preserving machine learning. Building things. Taking notes. Following the interesting questions.</desc>
+  <rect width="980" height="256" rx="3" fill="#f8f7f3"/>
+  <text x="35" y="55" font-family="Georgia, &quot;Times New Roman&quot;, serif" font-size="53" font-style="italic" fill="#292c26">j<tspan fill="#b74122">.</tspan></text>
+  <text x="88" y="33" font-family="Consolas, &quot;Liberation Mono&quot;, monospace" font-size="14" font-weight="600" fill="#292c26">jackie-cqz</text>
+  <text x="88" y="52" font-family="Consolas, &quot;Liberation Mono&quot;, monospace" font-size="8.5" letter-spacing="1.5" fill="#696d63">FIELD NOTES ON SOFTWARE &amp; AI</text>
+  <text x="944" y="39" font-family="Consolas, &quot;Liberation Mono&quot;, monospace" font-size="10" text-anchor="end" fill="#696d63">jackie-cqz.github.io ↗</text>
+  <line x1="36" y1="77" x2="944" y2="77" stroke="#dcddd3"/>
+  <circle cx="40" cy="113" r="3" fill="#e76a42"/>
+  <text x="54" y="116" font-family="Consolas, &quot;Liberation Mono&quot;, monospace" font-size="9" letter-spacing="1.4" fill="#696d63">AI SYSTEMS / AUTONOMOUS AGENTS</text>
+  <text x="36" y="180" font-family="Georgia, &quot;Times New Roman&quot;, serif" font-size="58" letter-spacing="-2" fill="#292c26">Hello, I'm jackie-cqz<tspan fill="#b74122">.</tspan></text>
+  <text x="38" y="215" font-family="&quot;Segoe UI&quot;, Arial, sans-serif" font-size="15" fill="#696d63">Building things. Taking notes. Following the interesting questions.</text>
+  <g stroke="#b74122" stroke-width="1.6"><line x1="858" y1="166" x2="922" y2="166"/><line x1="867.3725830020305" y1="143.37258300203047" x2="912.6274169979695" y2="188.62741699796953"/><line x1="890" y1="134" x2="890" y2="198"/><line x1="912.6274169979695" y1="143.37258300203047" x2="867.3725830020305" y2="188.62741699796953"/></g>
+</svg>
